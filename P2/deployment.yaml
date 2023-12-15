@@ -1,0 +1,32 @@
+- name: Build & deploy Docker Container
+  hosts: dockerservers
+  gather_facts: false
+  remote_user: root
+  tasks:
+    - name: Building Docker Image
+      docker_image:
+        name: mico:latest
+        source: build
+        build:
+          path: ~/project
+        state: present
+
+    - name: Stopping the Container
+      docker_container:
+        name: mico-container
+        image: mico:latest
+        state: started
+
+    - name: Removing the Container
+      docker_container:
+        name: mico-container
+        image: mico:latest
+        state: absent
+
+    - name: Creating the Container
+      docker_container:
+        name: mico-container
+        image: mico:latest
+        ports:
+          - "80:80"
+        state: started
