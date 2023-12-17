@@ -1,2 +1,2 @@
-git add . && git commit -m "Addded the files" && git push
+git add . && git commit -m "Restructured form validation code, reducing complexity and improving readability" && git push
 Restructured form validation code, reducing complexity and improving readability.
