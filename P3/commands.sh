@@ -93,3 +93,11 @@ nano /etc/ssh/sshd_config
 Uncomment Public Authentication yes | PasswordAuthentication Yes
 systemctl restart sshd
 passwd ubuntu
+
+
+J-> ssh ubuntu@DockerIP
+passwd
+Exit
+
+ssh-keygen
+ssh-copy-id ubuntu@DockerIp
