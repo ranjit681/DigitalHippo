@@ -19,13 +19,7 @@
 
 
 
-Goto D-> ls Check the file
 
-Goto github: Create a file
-Dockerfile
-FROM nginx
-COPY . /usr/share/nginx/html/
-Save it
 
 Automated-Pipeline/configure
 Post Build Actions : Remove the remote shell | Execute Shell: scp ./* ubuntu @DIP:~/website/ 
