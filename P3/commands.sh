@@ -130,3 +130,10 @@ Automated-Pipeline/configure
 Post-Build Actions : Shell: scp -r ./* ubuntu @DIP:~/website/
 Build Now
  Goto D -> ls
+
+ Automated-Pipeline/configure
+Post Build Actions: Add Build Steps: Remote Shell | shell cd /home/ubuntu/website
+
+D-> docker ps
+sudo usermod -aG docker ubuntu
+newgrp docker
