@@ -24,9 +24,7 @@
 
 
 
-D-> Exit | ls | mkdir website | pwd | /home/ubuntu/website
 
-Build Now
 
 Automated-Pipeline/configure
 Post-Build Actions : Shell: scp -r ./* ubuntu @DIP:~/website/
