@@ -21,9 +21,7 @@
 
 
 
-Automated-Pipeline/configure
-Post Build Actions : Remove the remote shell | Execute Shell: scp ./* ubuntu @DIP:~/website/ 
-Save
+
 
 
 D-> Exit | ls | mkdir website | pwd | /home/ubuntu/website
