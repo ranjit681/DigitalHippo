@@ -1,13 +1,6 @@
 
 
-Copy the IP and Login to the Jenkins
 
-New Item = Automated-Pipeline
-Free style Project
-Source code management= add git url | Main | Github hook trigger
-Goto Github repo = Webhook = url/github-webhook/
-Send everything
-Build Now
 
 
 SonarQube
